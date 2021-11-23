@@ -33,11 +33,9 @@
                         <a class="dropdown-item" href="#">Autores</a>
                         <a class="dropdown-item" href="#">Mais Comentados</a>
                         <a class="dropdown-item" href="#">Últimos visitados</a>
-
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
                 <ul class="navbar-nav mr-aut">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -51,9 +49,8 @@
                     </li>
                 </ul>
                 <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar"
-                    id="barSrc">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
+                    name="bookNameSearch" id="barSrc">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="fetchbookname();">Pesquisar</button>
         </div>
     </nav>
 
