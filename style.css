@@ -1,0 +1,83 @@
+.btn-outline-success {
+    color: #3852a8;
+    background-color: transparent;
+    background-image: none;
+    border-color: #3852a8;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #3852a8;
+    border-color: #3852a8;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #3852a8;
+    border-color: #3852a8;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active:focus, .btn-outline-success:not(:disabled):not(.disabled):active:focus, .show>.btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #3852a86e; 
+}
+.btn-outline-success {
+    color: #3852a8;
+    background-color: transparent;
+    background-image: none;
+    border-color: #3852a8;
+}
+.btn-outline-success.focus, .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem #3852a86e;
+}
+.bg-light {
+    background-color: #d9dde92c!important;
+}
+.formRegistration{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 440px;
+    padding: 15px 20px;
+}
+.formLogin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    padding: 15px 20px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #3852a8;
+    border-color: #3852a8;
+}
+.btn.disabled, .btn:disabled {
+    opacity: .65;
+    background-color: #3852a8;
+    border-color: #3852a8;
+}
+#invalidBookName, #invalidAuthor, #invalidGender, #invalidImage,#invalidBookDescription{
+    display: none;
+}
+.error
+{
+    color: red;
+    display: none;
+}
+#conteudo-left
+{
+    width:500px;
+    height:300px;
+    float:left;
+}
+#conteudo-right
+{
+    width:500px;
+    height:400px;
+    float:left;
+}
+.margin
+{
+    margin-top: 50%;
+}
