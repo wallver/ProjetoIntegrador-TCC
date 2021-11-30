@@ -12,7 +12,7 @@
 
 <body onload="fetchBooks();">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <a class="navbar-brand" href="index.html">InBook</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
             aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
@@ -20,22 +20,22 @@
         </button>
 
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="cdlivros.html" target="_self">Cadastrar Livro</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Explorar
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Autores</a>
-                            <a class="dropdown-item" href="#">Mais Comentados</a>
-                            <a class="dropdown-item" href="#">Últimos visitados</a>
-                        </div>
-                    </li>
-                </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="cdlivros.html" target="_self">Cadastrar Livro</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Explorar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Autores</a>
+                        <a class="dropdown-item" href="#">Mais Comentados</a>
+                        <a class="dropdown-item" href="#">Últimos visitados</a>
+                    </div>
+                </li>
+            </ul>
             <ul class="navbar-nav mr-aut ajuste">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -51,7 +51,8 @@
             <div class="d-flex">
                 <input class="form-control mr-sm-2 " type="search" placeholder="Pesquisar" aria-label="Pesquisar"
                     name="bookNameSearch" id="barSrc">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="fetchbookname();">Pesquisar</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                    onclick="fetchbookname();">Pesquisar</button>
             </div>
         </div>
     </nav>
@@ -78,8 +79,8 @@
                     <label for="bookGender">
                         <h5 class="dropdown-item">Gêneros</h5>
                     </label><br>
-                    <select name="livros">
-                        <option></option>
+                    <select name="bookGender" id="book-Gender" class="select-style" >
+                        <option>Todos</option>
                         <option value="Ação">Ação</option>
                         <option value="Aventura">Aventura</option>
                         <option value="Divulgação Cientifica">Divulgação Cientifica</option>
@@ -89,56 +90,14 @@
                         <option value="Suspense">Suspense</option>
                         <option value="Terror">Terror</option>
                     </select>
+                    <button class="btn btn-outline-success my-2 my-sm-0" onclick="fetchbookgender();">filtrar</button>
                 </div>
             </div>
             <div class="row col-4 mt-2" id="books">
-                <!-- <img class="card-img-top"
-                    src="https://2.bp.blogspot.com/-0qJOiseF0ks/Wgww7iKUuXI/AAAAAAAAbpM/FpPpvk0EFgEE3lxK8J1qAIm0an66S-84ACLcBGAs/s1600/livro-capa-o-espelho-secreto-m-j-putney-melhores-romance-de-epoca-fantasia-dicas-leitura-jovem-mademoisellelovesbooks.jpg"
-                    alt="Livro Romance">
-                <div class="card-body">
-                    <h5 class="card-title text-left">O Espelho Secreto</h5>
-                    <h6 class="text-left category">Fantasia</h6>
-                    <h6 class="card-text text-left">M.J. Putney</h6>
-                    <p class="card-text text-justify font-italic">Lady Victoria Mansfield, Tory, tem por destino
-                        uma
-                        vida encantadora e uma gama de pretendentes à sua altura. Até que uma assustadora
-                        descoberta
-                        ameaça arruinar sua vida e denegrir o nome de sua família para sempre: seu sangue está
-                        contaminado… por magia. Quando um terrível acidente obriga Tory a revelar seus poderes
-                        mágicos, ela é imediatamente exilada para um reformatório para jovens que carregam o
-                        terrível dom da magia.</p> -->
-                <!-- <div class="discucao mb-5">
-                        <div class="dropdown-divider"></div> -->
-                <!-- <h6>Comentários</h6>
-                        <p>Bla bla bla</p> -->
-                <!-- </div> -->
-            </div>
-            <!-- <div>
-                    <img class="card-img-top"
-                        src="https://th.bing.com/th/id/R.3f56f84df6a811c555fbeb9784c139f4?rik=vbGnQzEjGcaqcQ&pid=ImgRaw&r=0"
-                        alt="O Mundo Assombrado Pelos Demônios">
-                    <div class="card-body">
-                        <h5 class="card-title text-left">O mundo assombrado pelos demonios</h5>
-                        <h6 class="text-left category">Divulgação Ciêntifica</h6>
-                        <h6 class="card-text text-left">Carl Sagan</h6>
-                        <p class="card-text text-justify font-italic">O livro trata dos equívocos científicos
-                            cometidos
-                            pelas religiões e pelas pseudociências. Não se deve confundir pseudociência com ciência
-                            errônea, pois “a ciência prospera com seus erros, eliminando- os um a um”. Muitos dos
-                            erros
-                            cometidos pelo senso comum se devem ao fato de que nossas percepções são falíveis</p>
-                        <div class="discucao mb-5">
-                            <div class="dropdown-divider"></div>
-                            <h6>Comentários</h6>
-                            <p>Bla bla bla</p>
-                        </div>
-                    </div> -->
 
+            </div>
         </div>
     </div>
-    <!-- <div class="col">
-            3 de 3
-          </div> -->
 
     </div>
     </div>
