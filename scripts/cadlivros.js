@@ -207,6 +207,26 @@ const fetchbookname = () => {
         });
 }
 
+const fetchbookgender = () => {
+    bookGender = document.getElementById('book-Gender').value;
+    url = 'http://localhost:5000/booksgender.php?bookGender=' + bookGender;
+    console.log(url);
+    fetch(url)
+        .then((response) => {
+            if (response.status >= 200 && response.status < 300) {
+                return response.json();
+            }
+            throw new Error(response.statusText);
+        })
+        .then((books) => {
+            console.log(books);
+            showBooks(books);
+
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+}
 
 
 
